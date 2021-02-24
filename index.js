@@ -51,8 +51,14 @@ function DateToDigits() {
        3 : "r2c1" , 5 : "r2c2" , 7 :"r2c3",
        8 : "r3c1" , 1 : "r3c2" , 6 :"r3c3"
     };
+    var i =  1 ;
+    while (i <10){
+      document.getElementById(places_dict[i]).innerHTML = ""
+    i++
+    }
+
     for (digit_no in arr){
-        console.log(arr[digit_no])
+        //console.log(arr[digit_no])
         document.getElementById(places_dict[arr[digit_no]]).innerHTML += arr[digit_no].toString()+ " ";
     }
 
@@ -62,5 +68,6 @@ function DateToDigits() {
 
     
 }
+
 
 
