@@ -10,7 +10,7 @@ function DateToDigits() {
      // var parseString = require('parseString');
     var PersonalityNo = parseInt(date[0]) +parseInt(date[1]) ;
     while (PersonalityNo.toString().length > 1){
-        PersonalityNo = parseInt(parseString(PersonalityNo)[0]) +parseInt(parseString(PersonalityNo)[1]);
+        PersonalityNo = parseInt(PersonalityNo.toString()[0]) +parseInt(PersonalityNo.toString()[1]);
     } 
     var arr = date.replace("/","").replace("/","").split("") ;
 
